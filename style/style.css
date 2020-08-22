@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: "Exo 2", cursive;
   margin: 0;
@@ -63,6 +64,46 @@ header {
       color: #fff;
       text-align: center;
       margin-bottom: 20px; }
+    .wrapper content .container .my_work {
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      .wrapper content .container .my_work .work_wrapper {
+        overflow: hidden; }
+        .wrapper content .container .my_work .work_wrapper img {
+          width: 100%;
+          border-radius: 5px;
+          -webkit-box-shadow: 0 0 3px 0px #0300ff;
+                  box-shadow: 0 0 3px 0px #0300ff;
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-transition: 1s;
+          transition: 1s; }
+        .wrapper content .container .my_work .work_wrapper:hover.work_wrapper img {
+          -webkit-transform: scale(2);
+                  transform: scale(2);
+          -webkit-transition: 1s;
+          transition: 1s; }
+        .wrapper content .container .my_work .work_wrapper:hover::before {
+          content: "просмотр";
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          color: #fff;
+          cursor: pointer;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: rgba(0, 0, 0, 0.8);
+          border-radius: 5px;
+          width: 100%;
+          height: 100%;
+          z-index: 99999; }
 
 .footer footer {
   height: 200px;
@@ -76,5 +117,4 @@ header {
   color: #fff;
   text-align: center;
   margin-bottom: 20px; }
-
 /*# sourceMappingURL=style.css.map */
