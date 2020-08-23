@@ -60,9 +60,11 @@ header
 			margin-bottom: 20px
 		.container
 			.my_work
-				justify-content: space-around
+				justify-content: flex-start
 				.work_wrapper
 					overflow: hidden
+					border-radius: 5px
+					margin-left: 30px
 					img
 						width: 100%
 						border-radius: 5px
@@ -72,6 +74,7 @@ header
 					&:hover.work_wrapper img
 						transform: scale(2)
 						transition: 1s
+						border-radius: 5px
 					&:hover::before
 							content: "просмотр"
 							display: flex
